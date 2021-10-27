@@ -1,0 +1,33 @@
+enum usuarioStatus {
+  ATIVO
+  INATIVO
+  BLOQUEADO
+}
+
+type Perfil {
+  id: Int
+  nome: String
+}
+
+type Usuario {
+  id: Int
+  nome: String!
+  email: String!
+  numeroContato: String
+  perfil: Perfil
+  status: usuarioStatus
+}
+
+input UsuarioInput {
+  id: Int
+  nome: String
+  email: String
+  numeroContato: String
+  status: String
+  perfil: String
+}
+
+input UsuarioFiltro {
+  id: Int
+  email: String
+}

@@ -1,0 +1,17 @@
+type Mutation {
+  incluirUsuario(dados: UsuarioInput!): Usuario!
+  excluirUsuario(dados: UsuarioFiltro!): String!
+  alterarUsuario(dados: UsuarioInput): Usuario
+
+  incluirCliente(dados: ClienteInput!): Cliente!
+  alterarCliente(dados: ClienteInput): Cliente
+  excluirCliente(dados: ClienteInput!): String!
+
+  incluirProduto(dados: ProdutoInput!): Produto!
+  alterarProduto(dados: ProdutoInput): Produto
+  excluirProduto(dados: ProdutoInput!): String!
+
+  incluirPedido(dados: PedidoInput!): Pedido!
+  alterarPedido(dados: PedidoInput): Pedido
+  excluirPedido(dados: PedidoInput!): String!
+}

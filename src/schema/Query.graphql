@@ -1,0 +1,13 @@
+#ponto de entrada API GraphQl
+type Query {
+  usuarios: [Usuario]
+  usuario(id: Int): [Usuario]
+  produtos: [Produto]
+  produto(id: Int): [Produto]
+  clientes: [Cliente]
+  cliente(id: Int): [Cliente]
+  pedidos: [Pedido]
+  pedido(id: Int): [Pedido]
+  perfis: [Perfil]
+  perfil(id: Int): [Perfil]
+}

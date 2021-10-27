@@ -1,0 +1,8 @@
+#import Perfil, Usuario from 'Usuario.graphql'
+#import Endereco from 'Endereco.graphql'
+#import Produto from 'Produto.graphql'
+#import Cliente from 'Cliente.graphql'
+#import Pedido from 'Pedido.graphql'
+#import Query from 'Query.graphql'
+#import Mutation from 'Mutation.graphql'
+

@@ -1,0 +1,23 @@
+enum pedidoStatus {
+  ANDAMENTO
+  BLOQUEADO
+  CANCELADO
+  ENCERRADO
+}
+
+type Pedido {
+  id: Int
+  produto: Int
+  parcelas: String
+  valorUnitario: Float
+  comprador: Usuario
+  status: pedidoStatus
+}
+
+input PedidoInput {
+  id: Int
+  produto: Int
+  parcelas: String
+  valorUnitario: Float
+  comprador: String
+}

@@ -1,0 +1,28 @@
+enum produtoStatus {
+  ATIVO
+  INATIVO
+  BLOQUEADO
+  OBSOLETO
+}
+
+type Produto {
+  id: Int
+  nome: String
+  descricao: String
+  imagem: String
+  unidadeMedida: String
+  peso: Float
+  preco: Float
+  quantidadeEstoque: Float
+  status: produtoStatus
+}
+
+input ProdutoInput {
+  id: Int
+  nome: String
+  imagem: String
+  unidadeMedida: String
+  peso: Float
+  preco: Float
+  quantidadeEstoque: Float
+}

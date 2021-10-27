@@ -1,0 +1,27 @@
+#import Endereco from 'Endereco.graphql'
+
+enum clienteStatus {
+  ATIVO
+  INATIVO
+  BLOQUEADO
+}
+
+type Cliente {
+  id: Int
+  nomeCompleto: String
+  numeroContato: String
+  email: String
+  cpf: String
+  dataNascimento: String
+  endereco: Endereco
+  status: clienteStatus
+}
+
+input ClienteInput {
+  id: Int
+  nomeCompleto: String
+  numeroContato: String
+  email: String
+  cpf: String
+  dataNascimento: String
+}
